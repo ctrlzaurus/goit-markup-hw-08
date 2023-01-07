@@ -70,7 +70,7 @@ ul {
     color: var(--accent-color);
 }
 .list-nav .link:active {
-    color: var(--primary-bg-button-color);
+    color: var(--accent-color);
 }
 .list-contacts .contact {
     font-weight: 500;
