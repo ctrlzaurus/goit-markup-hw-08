@@ -8,10 +8,22 @@
 /* колір фону футер #2F303A */
 /* колір тексту футер #FFFFFF*/
 
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --primery-logo-color: #000000;
+    --secondary-logo-color: #FFFFFF;
+    --primary-bg-button-color: #F5F4FA;
+    --accent-br-button-color: #FFFFFF;
+}
+
 body {
     font-family: Roboto, sans-serif;
-    color: #212121;
-    background-color: #F5F5F5;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
 }
 ul {
     list-style: none;
@@ -24,23 +36,24 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #000000;
+    text-decoration-line: none;
+    color: var(--primery-logo-color);
 }
 .logo-element {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
-    color: #2196F3;
+    text-decoration-line: none;
+    color: var(--accent-color);
 }
 .logo-footer {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
-    color: #FFFFFF;
+    text-decoration-line: none;
+    color: var(--secondary-logo-color);
 }
 
 /* nav */
@@ -49,42 +62,99 @@ ul {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #212121;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
 .list-nav .link:hover,
 .list-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+.list-nav .link:active {
+    color: var(--primary-bg-button-color);
 }
 .list-contacts .contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #757575;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
 }
 .list-contacts .contact:hover,
 .list-contacts .contact:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* buttons */
-/* підкажіть будь-ласка, як би не переписувала не можу ввімкнути курсор на кнопки
-що саме треба виправити в коді? */
 
-.cursor .pointer {
-    cursor: pointer;
-}
 .button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    color: #212121;
-    background-color: #F5F4FA
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-button-color);
 }
 .button:hover,
 .button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    cursor: pointer;
+    color: var(--accent-br-button-color);
+    background-color: var(--accent-color);
+}
+.secondary-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--accent-br-button-color);
+    background-color: var(--accent-color);
+}
+.secondary-button:hover,
+.secondary-button:focus {
+    cursor: pointer;
+}
+/* main секія 1 сторінка */
+.main-section {
+    background-color: #2F303A;
+}
+.main {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--accent-br-button-color);
+}
+.title {
+    font-size: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.features-title .featur {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.featur-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.name {
+    font-size: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.work {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
 }
 
 /* works */ 
@@ -93,23 +163,26 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    color: #212121;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 }
 .description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    color: #757575;
+    color: var(--title-text-color);
 }
 
 /* футер */
 
+.footer {
+    background-color: #2F303A;
+}
 .contacts .link {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
 .contacts .link:hover {
-    color: #FFFFFF;
+    color: var(--secondary-logo-color);
 }
