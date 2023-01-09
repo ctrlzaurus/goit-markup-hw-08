@@ -126,14 +126,13 @@ ul {
     color: var(--accent-br-button-color);
 }
 .title {
-    font-size: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--primary-text-color);
 }
-.features-title .featur {
+.featur {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -167,7 +166,6 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .description {
@@ -187,8 +185,12 @@ ul {
     text-decoration-line: none;
     color: var(--accent-br-button-color);
 }
-.contacts .link-l {
+.contacts .link-footer {
     font-style: normal;
     text-decoration-line: none;
-    color: var(--secondary-logo-color);
+    color: var(--link-color);
+}
+.contacts .link-footer:hover,
+.contacts .link-footer:focus {
+    color: var(--accent-color);
 }
