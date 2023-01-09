@@ -16,6 +16,8 @@
     --secondary-logo-color: #FFFFFF;
     --primary-bg-button-color: #F5F4FA;
     --accent-br-button-color: #FFFFFF;
+    --secondary-bg-color: #2F303A;
+    --link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -23,7 +25,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    background-color: #FFFFFF;
+    background-color: var(--secondary-logo-color);
 }
 ul {
     list-style: none;
@@ -40,10 +42,6 @@ ul {
     color: var(--primery-logo-color);
 }
 .logo-element {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     text-decoration-line: none;
     color: var(--accent-color);
 }
@@ -60,23 +58,21 @@ ul {
 
 .list-nav .link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration-line: none;
     color: var(--primary-text-color);
 }
 .list-nav .link:hover,
-.list-nav .link:focus {
-    color: var(--accent-color);
-}
+.list-nav .link:focus,
 .list-nav .link:active {
     color: var(--accent-color);
 }
 .list-contacts .contact {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration-line: none;
     color: var(--title-text-color);
 }
 .list-contacts .contact:hover,
@@ -105,16 +101,18 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    color: var(--accent-br-button-color);
-    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-button-color);
 }
 .secondary-button:hover,
 .secondary-button:focus {
     cursor: pointer;
+    color: var(--accent-br-button-color);
+    background-color: var(--accent-color);
 }
 /* main секія 1 сторінка */
 .main-section {
-    background-color: #2F303A;
+    background-color: var(--secondary-bg-color);
 }
 .main {
     font-weight: 900;
@@ -132,7 +130,6 @@ ul {
 }
 .features-title .featur {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -175,13 +172,13 @@ ul {
 /* футер */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--secondary-bg-color);
 }
 .contacts .link {
-    font-size: 14px;
     line-height: 1.7;
     font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
+    text-decoration-line: none;
+    color: var(--link-color);
 }
 .contacts .link:hover {
     color: var(--secondary-logo-color);
