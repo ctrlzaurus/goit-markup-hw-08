@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./css/styles.css">
-      <title>Студія</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Студія</title>
+</head>
+
 <body>
-    <header>
-      <nav>
+    <header class="page-header">
         <a class="logo-header" href="#"><span class="logo-element">Web</span>Studio</a>
-          <ul class="list-nav">
-              <li><a href="./index.html" class="link current">Студія</a></li>
-              <li><a href="portfolio.html" class="link">Портфоліо</a></li>
-              <li><a href="#" class="link">Контакти</a></li>
-          </ul>
-      </nav>
-          <ul class="list-contacts">
-              <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
-          </ul>
+        <ul class="list-nav">
+            <li><a href="./index.html" class="link current">Студія</a></li>
+            <li><a href="portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+        </ul>
+        <ul class="list-contacts">
+          <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
+        </ul> 
     </header>
-    
+
     <main>
-      <section class="main-section">
+      <section class="container-main">
         <h1 class="main">Ефективні рішення для вашого бізнесу</h1>
-        <button class="secondary-button" type="button">Замовити послуги</button>
+        <button class="primery-button" type="button">Замовити послуги</button>
       </section>
+    <div class="container-featur">
       <section>
-        <h2 class="title">Наші особливості</h2>
-            <ul>
-                <li>
+        <h2 class="title-non">Наші особливості</h2>
+            <ul class="set-featur">
+                <li сlass="card-set">
                   <h3 class="featur">Увага до деталей</h3>
                   <p class="featur-description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
-                <li>
+                <li сlass="card-set">
                   <h3 class="featur">Пунктуальність</h3>
                   <p class="featur-description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
-                <li>
+                <li сlass="card-set">
                   <h3 class="featur">Планування</h3>
                   <p class="featur-description">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li>
+                <li сlass="card-set">
                   <h3 class="featur">Сучасні технології</h3>
                   <p class="featur-description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
@@ -60,7 +67,8 @@
                 <li><img src="./images/img-3.jpg" alt="color" width="370" height="294"></li>
             </ul>
       </section>
-      <section>
+    </div>
+      <section class="container-hero">
         <h2 class="title">Наша команда</h2>
             <ul>
                 <li>
@@ -87,11 +95,11 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="container-footer">
      <a class="logo-footer" href="#"><span class="logo-element">Web</span>Studio</a>
         <address>
-                <ul class="contacts">
-                    <li><a href="https://goo.gl/maps/L4CzKx4gpa9si7GE8" class="link">м.Київ, пр-т Лесі Українки, 26</a></li>
+                <ul class="contacts-list">
+                    <li><a href="https://goo.gl/maps/L4CzKx4gpa9si7GE8" class="link-s-footer">м.Київ, пр-т Лесі Українки, 26</a></li>
                     <li><a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a></li>
                     <li><a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a></li>
                 </ul>
