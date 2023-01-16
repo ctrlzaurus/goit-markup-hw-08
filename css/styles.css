@@ -23,7 +23,8 @@
     --border-color: #eeeeee;
     --shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --bg-box-color: rgba(245, 244, 250, 1);
-
+    --clients-boxes: rgba(175, 177, 184, 1);
+    --footer-soc-color: rgba(255, 255, 255, 0.1);
 }
 
 h1,
@@ -113,43 +114,32 @@ ul {
 .header-wrapper {
     display: flex;
     align-items: center;
+    gap: 50;
 }
 
 .list-nav {
     display: flex;
+    gap: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-.link {
-    margin-right: 50px;
 }
 
 .list-contacts {
     display: flex;
     margin-left: auto;
     align-items: center;
+    gap: 50px;
 }
 
+
+/*
 .contact {
-    margin-left: 50px;
+    margin-right: 50px;
 }
-
-/* ------- overlay ------- */
-
-.overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: center;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/Img-2-2.jpg);
+.list-contacts:nth-child(2n) {
+    margin-right: 0;
 }
-
+*/
 /* nav */
 
 .list-nav .link {
@@ -171,6 +161,7 @@ ul {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    justify-content: center;
     text-decoration-line: none;
 
     color: var(--title-text-color);
@@ -180,13 +171,62 @@ ul {
     color: var(--accent-color);
 }
 
-.logo-icon {
-    display: flex;
-    
+.mail-icon,
+.phone-icon {
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.list-contacts .mail-icon,
+.list-contacts .phone-icon {
     fill: var(--title-text-color);
 }
-.logo-icon:hover {
+.list-contacts:hover .mail-icon,
+.list-contacts:hover .phone-icon {
     fill: var(--accent-color);
+}
+
+
+/* 
+.contact-icon {
+    margin-right: 10px;
+    align-content: center;
+    fill: var(--title-text-color);
+}
+.contact-icon:hover {
+    fill: var(--accent-color);
+}
+*/
+/* overlay */
+
+.overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Img-2-2.jpg);
+}
+
+/* SVG */
+
+.feature-boxes {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    background-color: var(--bg-box-color);
 }
 
 /* buttons */
@@ -194,7 +234,7 @@ ul {
 .buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 26px;
+    margin-bottom: 50px;
     gap: 8px;
 }
 
@@ -227,6 +267,7 @@ ul {
     border: none;
 
     font-family: inherit;
+    letter-spacing: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -244,11 +285,14 @@ ul {
 /* main секія 1 сторінка */
 
 .main-title {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--secondary-bg-color);
 }
 .main {
-    margin: 0 auto;
-    padding-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 696px;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -260,26 +304,9 @@ ul {
 
 /* featur page */
 
-/* SVG */
-
-.feature-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 70px;
-    gap: 30px;
-}
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    width: 270px;
-    border-radius: 4px;
-    background-color: var(--bg-box-color);
-}
-
 .list-feature {
-    background-color: var(--accent-br-button-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .set-feature,
@@ -288,35 +315,50 @@ ul {
     display: flex;
 }
 
-
 .set-feature {
-    margin-top: 30px;
     gap: 30px;
+}
+.set-feature:nth-child(4n) {
+    gap: 0;
 }
 .card-set {
     width: 270px;
-    gap: 30px;
 }
-
 .feature-description {
     margin-top: 10px;
 }
 
-.list-img {
+.services {
+    padding-bottom: 94px;
+}
+.set-img {
     margin-top: 50px;
+}
+.list-img {
     margin-right: 30px;
-    margin-bottom: 94px;
+}
+.list-img:nth-child(3n) {
+    margin-right: 0;
 }
 
-.title-non {
+.title-none {
+    position: absolute;
     white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+    width: 1px; 
+    height: 1px;
     overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px; 
 }
+
+
 
 .title,
-.title-team {
+.title-team,
+.title-clients {
     text-align: center;
 
     font-weight: 700;
@@ -325,23 +367,22 @@ ul {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+/*
 .title {
     margin-top: 118px;
 }
+*/
 
-.list-team {
+.list-clients {
     padding-top: 94px;
-}
-
-.set-command {
-    margin-top: 50px;
     padding-bottom: 94px;
+    background-color: var(--accent-br-button-color);
 }
-
 
 
 .feature {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -358,6 +399,7 @@ ul {
 /* team page */
 
 .set-command {
+    margin-top: 50px;
     display: flex;
 }
 .card-team {
@@ -376,6 +418,8 @@ ul {
 }
 
 .list-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--primary-bg-button-color);
 }
 .name {
@@ -393,6 +437,65 @@ ul {
     color: var(--title-text-color);
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.soc-item {
+    width: 44px;
+    height: 44px;
+}
+.soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.studio-soc-icon {
+    fill: var(--clients-boxes);
+}
+.soc-link:hover,
+.soc-link:focus {
+    background-color: var(--accent-color);
+}
+.soc-link:hover .studio-soc-icon,
+.soc-link:focus .studio-soc-icon {
+    fill: var(--accent-br-button-color);
+}
+
+/* Clients */
+
+.clients-item {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid var(--clients-boxes);
+    color: var(--clients-boxes);
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
+}
+.client-icon {
+    fill: currentColor;
+}
+.client-icon:hover {
+    fill: var(--accent-color);
+}
+
 /* works */ 
 
 .works {
@@ -405,12 +508,14 @@ ul {
     flex-wrap: wrap;
 }
 .flex-element {
-    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--border-color);
-
+    
     background-color: var(--accent-br-button-color);
+}
+
+.flex-element:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-child(3n) {
@@ -425,6 +530,8 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-top: none;
 }
 
 .work-list {
@@ -435,6 +542,7 @@ ul {
     color: var(--primary-text-color);
 }
 .description {
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--title-text-color);
@@ -447,7 +555,9 @@ ul {
     padding-bottom: 60px;
     background-color: var(--secondary-bg-color);
 }
-
+.footer-icon {
+    display: flex;
+}
 .contacts-list {
     margin-top: 20px;
 }
@@ -470,4 +580,48 @@ ul {
 .contacts-list .link-footer:hover,
 .contacts-list .link-footer:focus {
     color: var(--accent-color);
+}
+
+.follow {
+    margin-left: 70px;
+}
+.follow-title {
+    margin-top: 11px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-br-button-color);
+}
+
+.follow-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.follow-item-footer {
+    width: 44px;
+    height: 44px;
+}
+.follow-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--footer-soc-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow-icon {
+    fill: var(--accent-br-button-color);
+}
+.follow-link:hover,
+.follow-link:focus {
+    background-color: var(--accent-color);
+}
+.follow-icon:hover .follow-icon,
+.follow-icon:focus .follow-icon {
+    fill: var(--accent-br-button-color);
 }
