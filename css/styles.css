@@ -164,7 +164,7 @@ ul {
 .link.current {
     color: var(--accent-color);
 }
-.list-contacts .contact {
+.contact {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -178,36 +178,12 @@ ul {
     color: var(--accent-color);
 }
 
-.mail-icon,
-.phone-icon {
-    justify-content: center;
+.contact .icon,
+.contact .icon {
     margin-right: 10px;
+    fill: currentColor;
 }
 
-.list-contacts .mail-icon,
-.list-contacts .phone-icon {
-    fill: var(--title-text-color);
-}
-.list-contacts:hover .mail-icon,
-.list-contacts:focus .phone-icon {
-    fill: var(--accent-color);
-}
-.list-contacts:hover .phone-icon,
-.list-contacts:focus .phone-icon {
-    fill: var(--accent-color);
-}
-
-
-/* 
-.contact-icon {
-    margin-right: 10px;
-    align-content: center;
-    fill: var(--title-text-color);
-}
-.contact-icon:hover {
-    fill: var(--accent-color);
-}
-*/
 
 /* SVG */
 
