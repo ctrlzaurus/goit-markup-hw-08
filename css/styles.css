@@ -527,6 +527,7 @@ ul {
     border: 1px solid var(--clients-boxes);
     color: var(--clients-boxes);
 }
+
 .client-link:hover,
 .client-link:focus {
     border-color: var(--accent-color);
@@ -534,8 +535,9 @@ ul {
 .client-icon {
     fill: var(--clients-boxes);
 }
-.client-icon:hover,
-.client-icon:focus {
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
     fill: var(--accent-color);
 }
 
@@ -729,6 +731,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 
     min-height: 591px;
     min-width: 521px;
