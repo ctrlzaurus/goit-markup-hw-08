@@ -839,6 +839,10 @@ ul {
     border: 1px solid var(--backdrop-bt-color);
 }
 .button-sv {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
     fill: var(--primery-logo-color);
 }
 .button-sv:hover {
@@ -848,7 +852,7 @@ ul {
 .modal-title {
     font-style: normal;
     text-align: center;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -859,20 +863,24 @@ ul {
 
 .input-wrap {
     position: relative;
-    padding-top: 4px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .modal-imput {
+    margin-top: 4px;
     width: 100%;
-    height: 40px;
+    height: 45px;
     padding-left: 35px;
     cursor: pointer;
     
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
     border-radius: 4px;
     border: 1px solid var(--input-color);
-
-    color: #000000;
+    outline: none;
     font-size: 14px;
 }
 
@@ -880,7 +888,10 @@ ul {
 .modal-icon {
     position: absolute;
     left: 12px;
-    top: 45%;
+    top: 50%;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-50%);
     fill: var(--primary-text-color);
 }
@@ -904,9 +915,7 @@ ul {
 
 
 .modal-filed {
-    /*display: flex;
-    justify-content: center;*/
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .check-text {
@@ -921,6 +930,7 @@ ul {
 }
 .text-element {
     text-decoration: underline;
+    margin-left: 4px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -943,33 +953,19 @@ ul {
     fill: var(--accent-br-button-color);
 }
 
-
-/*
-.check-text::before {
-    content: "";
-    margin-right: 7px;
-    width: 16px;
-    height: 15px;
-    border: 2px solid ;
-    border-radius: 2px;
-}
-
-.modal-check:checked + .check-text::before {
-    background-color: var(--accent-color);
-    border: none;
-    background-image: url(../images/Vector-2.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-*/
 .imput-massege {
     margin-top: 4px;
     width: 100%;
     height: 120px;
     padding: 12px 16px;
     border: 1px solid var(--input-color);
+    outline: none;
     border-radius: 4px;
     resize: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 
     font-size: 12px;    
 }
@@ -981,23 +977,23 @@ ul {
 .send-button {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .modal-button {
     border-radius: 4px;
     padding: 10px 52px;
     border: none;
+    cursor: pointer;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
 
-    transition-property: color, background-color, box-shadow;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 
     color: var(--accent-br-button-color);
     background-color: var(--accent-color);
@@ -1005,8 +1001,6 @@ ul {
 }
 .modal-button:hover,
 .modal-button:focus {
-    cursor: pointer;
-    color: var(--accent-br-button-color);
     background-color: var(--accent-s-color);
 }
 
