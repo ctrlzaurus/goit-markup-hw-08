@@ -731,6 +731,7 @@ ul {
 
 .online-imput {
     cursor: pointer;
+    outline: none;
     padding-left: 16px;
     width: 358px;
     height: 50px;
