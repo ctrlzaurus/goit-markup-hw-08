@@ -1,0 +1,47 @@
+.list-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--accent-br-button-color);
+}
+
+.clients-item {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    border: 1px solid var(--clients-boxes);
+    color: var(--clients-boxes);
+    
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        }
+}
+
+
+
+.client-icon {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    fill: var(--clients-boxes);
+    .client-link:hover &,
+    .client-link:focus & {
+        fill: var(--accent-color);
+        }
+}
+

@@ -1,0 +1,119 @@
+.filter__title {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 6px 25px;
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-button-color);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-br-button-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-button-one),
+        var(--box-shadow-button-two),
+        var(--box-shadow-button-three);
+    }
+}
+
+.flex-element {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+    background-color: var(--accent-br-button-color);
+
+    &:nth-child(3n) {
+        margin-right: 0;
+        }
+    
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+        }
+}
+
+.flex-element:hover,
+.flex-element:focus {
+    box-shadow: var(--box-shadow-one), var(--box-shadow-two), var(--box-shadow-three);
+}
+
+.content-box {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+}
+
+.studio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.studio-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding-top: 63px;
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--accent-br-button-color);
+    background-color: var(--stodio-text-color);
+
+    .flex-element:hover & {
+        transform: translateY(0%);
+        }
+}
+
+.work-list {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+
+.description {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--title-text-color);
+}

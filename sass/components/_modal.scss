@@ -1,0 +1,229 @@
+.backdrop {
+    position: fixed;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+    background-color: var(--backdrop-color);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: inherit;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+
+    transform: translate(-50%, -50%) scaleY(1);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    height: 581px;
+    width: 528px;
+    background-color: var(--accent-br-button-color);
+    box-shadow: var(--shadow-color);
+    border-radius: 4px;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+}
+
+.backdrop-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: var(--accent-br-button-color);
+    border: 1px solid var(--backdrop-bt-color);
+}
+
+.button-sv {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+    fill: var(--primery-logo-color);
+}
+
+.button-sv:hover {
+    fill: var(--accent-color);
+}
+
+.modal-title {
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+
+.input-wrap {
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.modal-imput {
+    margin-top: 4px;
+    width: 100%;
+    height: 45px;
+    padding-left: 35px;
+    cursor: pointer;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+    border-radius: 4px;
+    border: 1px solid var(--input-color);
+    outline: none;
+    font-size: 14px;
+}
+
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-50%);
+    fill: var(--primary-text-color);
+}
+
+.modal-imput:hover+.modal-icon {
+    fill: var(--accent-color);
+}
+
+.modal-imput:hover {
+    border-color: var(--accent-color);
+}
+
+.label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--title-text-color);
+}
+
+.modal-filed {
+    margin-top: 20px;
+}
+
+.check-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.text-element {
+    text-decoration: underline;
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.check-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    fill: transparent;
+}
+
+.modal-check:checked+.check-text span {
+    background-color: var(--accent-color);
+    border: 0;
+    fill: var(--accent-br-button-color);
+}
+
+.imput-massege {
+    margin-top: 4px;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid var(--input-color);
+    outline: none;
+    border-radius: 4px;
+    resize: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-size: 12px;
+}
+
+.imput-massege:hover {
+    border-color: var(--accent-color);
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.modal-button {
+    border-radius: 4px;
+    padding: 10px 52px;
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--accent-br-button-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-pr-but);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--accent-s-color);
+}
+
+.visually-hidden {
+    display: none;
+}

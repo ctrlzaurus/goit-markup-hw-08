@@ -1,0 +1,51 @@
+.services {
+    padding-bottom: 94px;
+}
+
+.set-img {
+    display: flex;
+    margin-top: 50px;
+}
+
+.list-img {
+    margin-right: 30px;
+    &:nth-child(3n) {
+        margin-right: 0;
+        }
+}
+
+
+
+.services-title,
+.title-team,
+.title-clients {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.box-img {
+    position: relative;
+}
+
+.box-img>.img-item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    height: 70px;
+    width: 370px;
+
+    padding: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: var(--box-img);
+    color: var(--accent-br-button-color);
+}
