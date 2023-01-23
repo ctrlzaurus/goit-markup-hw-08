@@ -1,29 +1,70 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-color: var(--secondary-bg-color);
 
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
+    background-size: cover;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/Img-2-2.jpg);
+    @media screen and (min-width: 320px) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/Header-tel-min.jpg);
+        @include retina {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/Header-2x-min.jpg);
+            }
+        padding: 118px 60px;
+    }
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/Header-tablet-min.jpg);
+            @include retina {
+                background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/Header-tablet-2x-min.jpg);
+            }
+        padding: 118px 204px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 200px 200px;
+    }
 }
 
 .hero__title {
-    margin-right: auto;
-    margin-left: auto;
-    width: 696px;
-    text-align: center;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent-br-button-color);
+    @media screen and (max-width: 1999px) {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-br-button-color);
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        margin-left: auto;
+        width: 696px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent-br-button-color);
+    }
 }
 
 

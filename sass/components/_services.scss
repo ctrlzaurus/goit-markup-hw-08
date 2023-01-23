@@ -1,5 +1,8 @@
 .services {
     padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .set-img {
@@ -10,17 +13,13 @@
 .list-img {
     margin-right: 30px;
     &:nth-child(3n) {
-        margin-right: 0;
+            margin-right: 0;
         }
 }
 
-
-
-.services-title,
-.title-team,
-.title-clients {
+.services-title {
     text-align: center;
-
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -30,6 +29,7 @@
 
 .box-img {
     position: relative;
+
 }
 
 .box-img>.img-item {
@@ -39,7 +39,7 @@
     bottom: 0;
     height: 70px;
     width: 370px;
-
+        
     padding: 27px;
     font-weight: 700;
     font-size: 14px;

@@ -27,11 +27,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    height: 581px;
-    width: 528px;
     background-color: var(--accent-br-button-color);
     box-shadow: var(--shadow-color);
     border-radius: 4px;
+    @media screen and (min-width: 480px) and (max-width: 1999px) {
+        height: 609px;
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 581px;
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -74,9 +80,14 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    @media screen and (min-width: 480px) and (max-width: 1999px) {
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 
@@ -141,10 +152,16 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    @media screen and (min-width: 480px) and (max-width: 1999px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .text-element {

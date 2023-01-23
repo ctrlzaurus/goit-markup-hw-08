@@ -16,7 +16,7 @@
   <title>Студія</title>
 </head>
 
-<body>
+<body no-scroll>
 
   <header class="page-header">
     <div class="container">
@@ -42,7 +42,42 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-open" data-menu-open>
+        <svg class="but-open" width="24" height="16">
+          <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
     </div>
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-container">
+        <div class="mob-menu-top">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="but-close" width="19" height="19">
+              <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-2"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list">
+            <li><a href="./index.html" class="navigation-mob-link current">Студія</a></li>
+            <li><a href="portfolio.html" class="navigation-mob-link">Портфоліо</a></li>
+            <li><a href="#" class="navigation-mob-link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu-med">
+          <ul class="mob-cont-list">
+            <li class="mob-cont-item"><a href="tel:+380961111111" class="tel-cont-item">+38 096 111 11 11</a></li>
+            <li class="mob-cont-item"><a href="mailto:info@devstudio.com" class="mail-cont-item">info@devstudio.com</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu-bottom">
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">Instagram</a></li>
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">Twitter</a></li>
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">Facebook</a></li>
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
   </header>
 
   <main>
@@ -53,7 +88,7 @@
       </div>
     </section>
 
-    <section class="feature">
+     <section class="feature">
       <div class="container">
         <h2 class="feature__title hiden">Наші особливості</h2>
         <ul class="feature__item">
@@ -130,7 +165,29 @@
         <h2 class="title-team">Наша команда</h2>
         <ul class="set-command">
           <li class="card-team">
-            <img src="./images/img-4.jpg" alt="Ігор Дем'яненкр" width="270" height="260" />
+            <source
+              srcset="
+              ./images/igor-desk-min.jpg 1x,
+              ./images/img-4.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source 
+              srcset="
+                ./images/igor-tablet-min.jpg 1x,
+                ./images/igor-tablet2x-min.jpg 2x" 
+              media="(min-width: 768px)" 
+            />
+            <source 
+              srcset="
+                ./images/igor-tel-min.jpg 1x,
+                ./images/igor-tel2x-min.jpg 2x" 
+              media="(min-width: 480px)" 
+            />
+            <img 
+              src="./images/img-4.jpg" 
+              alt="Ігор Дем'яненкр" 
+              width="450" 
+              height="460" />
             <div class="person">
               <h3 class="name">Ігор Дем'яненко</h3>
               <p class="work">Product Designer</p>
@@ -167,7 +224,26 @@
             </div>
           </li>
           <li class="card-team">
-            <img src="./images/img-5.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+            <source 
+              srcset="
+                olga-desk-1x 1x,
+                ./images/img-5.jpg 2x" 
+                media="(min-width: 1200px)" />
+            <source 
+              srcset="
+                ./images/olga-tablet-min.jpg 1x,
+                ./images/olga-tablet-2x.jpg 2x" 
+                media="(min-width: 768px)" />
+            <source 
+              srcset="
+                ./images/olga-tel-min.jpg 1x,
+                ./images/olga-tel-2x.jpg 2x"
+                 media="(min-width: 480px)" />
+            <img 
+              src="./images/img-5.jpg" 
+              alt="Ольга Рєпіна" 
+              width="450" 
+              height="460" />
             <div class="person">
               <h3 class="name">Ольга Рєпіна</h3>
               <p class="work">Frontend Developer</p>
@@ -204,7 +280,24 @@
             </div>
           </li>
           <li class="card-team">
-            <img src="./images/img-6.jpg" alt="Микола Тарасов" width="270" height="260" />
+            <source 
+              srcset="
+                ./images/mykola-desk-1x.jpg 1x,
+                ./images/img-6.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/mykola-tablet-min.jpg 1x,
+                ./images/mykola-tablet-2x.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/mykola-tel-min.jpg 1x,
+                ./images/mykola-tel-2x.jpg 2x" 
+                media="(min-width: 480px)" />
+            <img 
+              src="./images/img-6.jpg" 
+              alt="Микола Тарасов" 
+              width="450" 
+              height="460" />
             <div class="person">
               <h3 class="name">Микола Тарасов</h3>
               <p class="work">Marketing</p>
@@ -241,7 +334,23 @@
             </div>
           </li>
           <li class="card-team">
-            <img src="./images/img-7.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+            <source srcset="
+              ./images/myhaylo-desk-1x-min.jpg 1x,
+              ./images/img-7.jpg 2x" 
+              media="(min-width: 1200px)" />
+            <source srcset="
+              ./images/myhaylo-tablet-min.jpg 1x,
+              ./images/myhaylo-tablet-2x-min.jpg 2x" 
+              media="(min-width: 768px)" />
+            <source srcset="
+              ./images/myhaylo-tel-min.jpg 1x,
+              ./images/myhaylo-tel-2x-min.jpg 2x" 
+              media="(min-width: 480px)" />
+            <img 
+              src="./images/img-7.jpg" 
+              alt="Михайло Єрмаков" 
+              width="450" 
+              height="460" />
             <div class="person">
               <h3 class="name">Михайло Єрмаков</h3>
               <p class="work">UI Designer</p>
@@ -449,6 +558,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

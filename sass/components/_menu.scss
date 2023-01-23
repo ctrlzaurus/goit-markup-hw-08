@@ -1,0 +1,130 @@
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--accent-br-button-color);
+    z-index: 5;
+    > .mob-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 40px ;
+        height: 100%;
+    }
+}
+
+.mob-menu.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: inherit;
+}
+
+.menu-close {
+    display: block;
+    padding-top: 21px;
+    padding-right: 21px;
+    margin-left: auto;
+    margin-bottom: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.but-close {
+    fill: var(--primary-text-color);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.mob-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.navigation-mob-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.navigation-mob-link.current {
+    color: var(--accent-color);
+}
+
+.mob-cont-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 202px;
+    gap: 32px;
+}
+
+.tel-cont-item {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mail-cont-item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-soc-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 34px;
+    padding-bottom: 48px;
+}
+
+.mob-soc-item:not(:last-child) {
+    position: relative;
+}
+
+.mob-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    color: var(--accent-color);
+}
+
+.mob-soc-link::after {
+    display: flex;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: var(--title-text-color);
+}
