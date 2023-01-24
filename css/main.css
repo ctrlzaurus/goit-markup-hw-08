@@ -171,7 +171,6 @@ ul {
 .mob-cont-list {
   display: flex;
   flex-direction: column;
-  padding-top: 202px;
   gap: 32px;
 }
 
@@ -203,7 +202,6 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding-top: 34px;
   padding-bottom: 48px;
 }
 
