@@ -1,5 +1,8 @@
 .footer {
     background-color: var(--secondary-bg-color);
+    @media screen and (min-width: 320px) {
+        padding: 60px 0;
+    }
     @media screen and (min-width: 480px) {
         padding: 60px 0;
     }
@@ -16,7 +19,12 @@
     //     display: flex;
     //     width: 480px;
     // }
-    @media screen and (min-width: 768px) {
+    // @media screen and (min-width: 320px) and (max-width: 767px) {
+    //     display: flex;
+    //     justify-content: space-around;
+    //     gap: 60px;
+    // }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -30,7 +38,7 @@
     @media screen and (min-width: 480px) {
         text-align: center;
     }
-    @media screen and (min-width: 768px) and (max-width: 1999px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         text-align: center;
     }
     @media screen and (min-width: 1200px) {
@@ -69,8 +77,11 @@
     font-style: normal;
     text-decoration: none;
     color: var(--accent-br-button-color);
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        margin-bottom: 8px;
+    }
     @media screen and (min-width: 1200px) {
-        padding-bottom: 9px;
+        margin-bottom: 9px;
     }
 }
 
@@ -86,12 +97,14 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 
     color: var(--link-color);
 
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        margin-bottom: 8px;
+    }
     @media screen and (min-width: 1200px) {
-        padding-bottom: 9px;
+        margin-bottom: 9px;
     }
 }
 
@@ -159,7 +172,6 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
     &:hover,
     &:focus {
         background-color: var(--accent-color);
@@ -195,6 +207,11 @@
 .online-imput {
     cursor: pointer;
     outline: none;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -251,7 +268,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    @media screen and (min-width: 768px) and (max-width: 1999px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
     }

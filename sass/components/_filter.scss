@@ -1,5 +1,5 @@
 .filter__title {
-    @media screen and (max-width:1999px) {
+    @media screen and (max-width:1199px) {
         padding: 60px 0;
     }
     @media screen and (min-width: 1200px) {
@@ -11,7 +11,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 30px;
+    @media screen and (max-width:1199px) {
+        padding-top: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 50px;
+    }
 }
 
 

@@ -21,11 +21,11 @@
         padding: 16px 0;
     }
     @media screen and (min-width: 768px) {
-        padding: 26px 0;
+        padding: 0;
         padding-right: 88px;
     }
     @media screen and (min-width: 1200px) {
-        padding: 26px 0;
+        padding: 0;
         margin-right: 93px;
     }
 }
@@ -37,7 +37,7 @@
 }
 
 .menu-open {
-   @media screen and (min-width: 320px) {
+   @media screen and (min-width: 320px) and (max-width: 767px) {
         margin-left: auto;
         border: none;
         background-color: transparent;
@@ -164,10 +164,29 @@
 .contact .contacts__icon,
 .contact .contacts__icon {
     margin-right: 10px;
-
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 
     fill: currentColor;
+}
+.mail-icon {
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.tel-icon {
+    @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
 }
