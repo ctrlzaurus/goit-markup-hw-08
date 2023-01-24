@@ -89,13 +89,15 @@
     transition-delay: 0;
 
     color: var(--link-color);
-    & .link-footer:hover,
-    & .link-footer:focus {
-        color: var(--accent-color);
-    }
+
     @media screen and (min-width: 1200px) {
         padding-bottom: 9px;
     }
+}
+
+.contacts-list .link-footer:hover,
+.contacts-list .link-footer:focus {
+    color: var(--accent-color);
 }
 
 // .contacts-item:not(:last-child) {

@@ -6,10 +6,7 @@
     margin-right: auto;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/Img-2-2.jpg);
+    
     @media screen and (min-width: 320px) {
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -37,6 +34,16 @@
         padding: 118px 204px;
     }
     @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/Img-2-2.jpg);
+        @include retina {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-min-2x.jpg);
+        }
         padding: 200px 200px;
     }
 }

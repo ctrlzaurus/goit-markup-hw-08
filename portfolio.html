@@ -16,7 +16,7 @@
   <title>Портфоліо</title>
 </head>
 
-<body>
+<body no-scroll>
 
   <header class="page-header">
     <div class="container">
@@ -42,6 +42,41 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-open" data-menu-open>
+        <svg class="but-open" width="24" height="16">
+          <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-container">
+        <div class="mob-menu-top">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="but-close" width="19" height="19">
+              <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-2"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list">
+            <li><a href="./index.html" class="navigation-mob-link">Студія</a></li>
+            <li><a href="portfolio.html" class="navigation-mob-link current">Портфоліо</a></li>
+            <li><a href="#" class="navigation-mob-link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu-med">
+          <ul class="mob-cont-list">
+            <li class="mob-cont-item"><a href="tel:+380961111111" class="tel-cont-item">+38 096 111 11 11</a></li>
+            <li class="mob-cont-item"><a href="mailto:info@devstudio.com" class="mail-cont-item">info@devstudio.com</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu-bottom">
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">Instagram</a></li>
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">Twitter</a></li>
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">Facebook</a></li>
+            <li class="mob-soc-item"><a href="#" class="mob-soc-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -60,7 +95,23 @@
         <ul class="flex-container">
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-8.jpg" alt="laptop" width="370" height="294" />
+              <source srcset="
+                ./images/img-8.jpg 1x,
+                ./images/img-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/cryack-tabl-min.jpg 1x,
+                ./images/cryack-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/cryack-tel-2x-min.jpg 1x,
+                ./images/cryack-tel-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-8.jpg" 
+                alt="laptop" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -73,7 +124,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-9.jpg" alt="playar" width="370" height="294" />
+              <source srcset="
+                ./images/img-9.jpg 1x,
+                ./images/img-1-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/player-tabl-min.jpg 1x,
+                ./images/player-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/player-tel-min.jpg 1x,
+                ./images/player-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-9.jpg" 
+                alt="playar" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -86,7 +153,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-10.jpg" alt="logo" width="370" height="294" />
+              <source srcset="
+                ./images/img-10.jpg 1x,
+                ./images/img-2-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/sea-tabl-min.jpg 1x,
+                ./images/sea-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/sea-tel-min.jpg 1x,
+                ./images/sea-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-10.jpg" 
+                alt="logo" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -99,7 +182,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-11.jpg" alt="headphone" width="370" height="294" />
+              <source srcset="
+                ./images/img-11.jpg 1x,
+                ./images/img-3-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/pod-tabl-min.jpg 1x,
+                ./images/pod-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/pod-tel-min.jpg 1x,
+                ./images/pod-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-11.jpg" 
+                alt="headphone" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -112,7 +211,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-12.jpg" alt="boxes" width="370" height="294" />
+              <source srcset="
+                ./images/img-12.jpg 1x,
+                ./images/img-4-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/box-tabl-min.jpg 1x,
+                ./images/box-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/box-tel-min.jpg 1x,
+                ./images/box-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-12.jpg" 
+                alt="boxes" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -125,7 +240,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-13.jpg" alt="computer" width="370" height="294" />
+              <source srcset="
+                ./images/img-13.jpg 1x,
+                ./images/img-5-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/mac-tabl-min.jpg 1x,
+                ./images/mac-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/mac-tel-min.jpg 1x,
+                ./images/mac-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-13.jpg" 
+                alt="computer" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -138,7 +269,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-14.jpg" alt="book" width="370" height="294" />
+              <source srcset="
+                ./images/img-14.jpg 1x,
+                ./images/img-6-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/mag-tabl-min.jpg 1x,
+                ./images/mag-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/mag-tel-min.jpg 1x,
+                ./images/mag-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-14.jpg" 
+                alt="book" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -151,7 +298,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-15.jpg" alt="sticker" width="370" height="294" />
+              <source srcset="
+                ./images/img-15.jpg 1x,
+                ./images/img-7-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/lab-tabl-min.jpg 1x,
+                ./images/lab-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/lab-tel-min.jpg 1x,
+                ./images/lab-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-15.jpg" 
+                alt="sticker" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -164,7 +327,23 @@
           </li>
           <li class="flex-element">
             <div class="studio-wrap">
-              <img src="./images/img-16.jpg" alt="laptop" width="370" height="294" />
+              <source srcset="
+                ./images/img-16.jpg 1x,
+                ./images/img-8-min.jpg 2x" 
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/top-tabl-min.jpg 1x,
+                ./images/top-tabl-2x-min.jpg 2x" 
+                media="(min-width: 768px)" />
+              <source srcset="
+                ./images/top-tel-min.jpg 1x,
+                ./images/top-tel-2x-min.jpg 2x" 
+                media="(min-width: 480px)" />
+              <img 
+                src="./images/img-16.jpg" 
+                alt="laptop" 
+                width="450" 
+                height="294" />
               <p class="studio-text">Ресурс пропонує комплексні пропозиції
                 з різним рівнем функціоналу та сервісів.
                 Все це дозволить відвідувачу отримати вичерпні відомості
@@ -182,7 +361,7 @@
 
   <footer class="footer">
     <div class="container footer-icon">
-      <div>
+      <div class="footer-nav">
         <a class="footer__logo" href="#"><span class="footer__logo--element">Web</span>Studio</a>
         <address>
           <ul class="contacts-list">
@@ -241,7 +420,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
