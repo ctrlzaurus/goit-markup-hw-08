@@ -999,6 +999,14 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-icon {
     display: flex;
