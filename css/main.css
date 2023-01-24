@@ -47,9 +47,9 @@ body {
   margin-right: auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    width: 480px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -197,6 +197,7 @@ ul {
 
 .mob-soc-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
   padding-bottom: 48px;
@@ -208,7 +209,6 @@ ul {
 
 .mob-soc-link {
   display: flex;
-  flex-wrap: wrap;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -660,7 +660,7 @@ ul {
 .list-team {
   background-color: var(--primary-bg-button-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .list-team {
     padding: 60px 0;
   }
@@ -837,6 +837,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .client-box {
+    width: 100%;
+  }
+}
+
 .client-link {
   display: flex;
   align-items: center;
@@ -851,7 +857,12 @@ ul {
 .client-link:hover, .client-link:focus {
   border-color: var(--accent-color);
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .client-link {
+    height: 92px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .client-link {
     height: 92px;
     width: 210px;
@@ -1060,7 +1071,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-nav {
     text-align: center;
   }
@@ -1110,7 +1121,7 @@ ul {
   text-decoration: none;
   color: var(--accent-br-button-color);
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .contacts-list .link-s-footer {
     margin-bottom: 8px;
   }
@@ -1133,7 +1144,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--link-color);
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .contacts-list .link-footer {
     margin-bottom: 8px;
   }
@@ -1164,7 +1175,7 @@ ul {
   text-transform: uppercase;
   color: var(--accent-br-button-color);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .follow-title {
     padding-top: 60px;
     text-align: center;
@@ -1186,7 +1197,7 @@ ul {
   margin-top: 20px;
   gap: 10px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .follow-list {
     justify-content: center;
   }
@@ -1256,7 +1267,7 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--secondary-bg-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .online-imput {
     margin-bottom: 20px;
     width: 100%;
@@ -1304,7 +1315,7 @@ ul {
 .online-button:hover, .online-button:focus {
   background-color: var(--accent-s-color);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .online-button {
     margin-left: auto;
     margin-right: auto;

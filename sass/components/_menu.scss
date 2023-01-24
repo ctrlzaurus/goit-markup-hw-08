@@ -93,6 +93,7 @@
 
 .mob-soc-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
     // padding-top: 34px;
@@ -105,7 +106,6 @@
 
 .mob-soc-link {
     display: flex;
-    flex-wrap: wrap;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
