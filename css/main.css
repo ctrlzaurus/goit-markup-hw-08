@@ -1106,8 +1106,9 @@ ul {
   text-transform: uppercase;
   color: var(--accent-br-button-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .follow-title {
+    padding-top: 60px;
     text-align: center;
   }
 }
