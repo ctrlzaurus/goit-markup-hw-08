@@ -49,29 +49,27 @@
 }
 
 .hero__title {
-    width: 100%;
-    @media screen and (min-width: 320px) and (max-width: 1199px) {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-br-button-color);
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 360px;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.61;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--accent-br-button-color);
     }
     @media screen and (min-width: 1200px) {
-        margin-right: auto;
-        margin-left: auto;
         width: 696px;
-        text-align: center;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--accent-br-button-color);
     }
 }
 
