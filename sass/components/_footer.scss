@@ -27,11 +27,13 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
+        align-items: baseline;
         justify-content: space-around;
         gap: 60px;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
+        align-items: baseline;
     }
 }
 .footer-nav {
@@ -142,7 +144,6 @@
         text-align: center;
     }
     @media screen and (min-width: 768px) {
-        padding-top: 5px;
         text-align: center;
     }
     @media screen and (min-width: 1200px) {
@@ -215,6 +216,11 @@
     padding-left: 16px;
     
     border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--secondary-bg-color);
     @media screen and (min-width: 320px) {
